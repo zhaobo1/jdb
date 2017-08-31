@@ -1,0 +1,146 @@
+@import 'common';
+.mainleft{
+	width:855px;
+	margin-right:25px;
+	float:left;
+	border:1px solid #eaeaea;
+	.mianbaoxue{
+		background: #f9f9f9;
+		padding-left: 19px;
+		border-bottom:1px solid #eaeaea;
+		height: 38px;
+		line-height: 38px;
+		font-size: 14px;
+		color: #777;
+		a{
+			color: #777;
+			&:hover{
+				color: #3bce9d
+			}
+		}
+	}
+	.news-infocontent{
+		padding: 48px 25px 48px 25px;
+		background: #fff;
+		.top{
+			border-bottom:1px solid #eaeaea;
+			padding-bottom:20px;
+			h1{
+				@include htext(#333);
+				font-size: 30px;
+				text-align: center;
+			}
+			div.infos{
+				text-align: center;
+				width: 550px;
+				margin:22px auto 0 auto;
+				@extend %clearfix;
+				span.time{
+					font-size:14px;
+					color: #777;
+					float: left;
+					margin-top: 3px;
+				}
+				span.from{
+					font-size:14px;
+					color: #777;
+				}
+			    div.bdsharebuttonbox{
+			    	float: right;
+			    	a{
+			    		margin:0 0 0 6px ;
+			    	}
+			    }
+			}
+		}
+		.content-news{
+			padding:20px 0 50px 0;
+		}
+		.yiwen{
+			font-size: 16px;
+			color: #333;
+			text-align: center;
+			line-height: 1.5;
+			width: 666px;
+			margin:0 auto;
+			a{
+				color: #eb2727;
+			}
+			p.qq{
+				margin-top: 20px;
+			}
+		}
+	}
+	.infocontent{
+		padding: 0 54px 54px 54px;
+		background: #fff;
+		.part1{
+			padding-top:55px;
+			img.heads{
+				height: 126px;
+				width: 126px;
+				@include borderR(50%);
+				display: block;
+				margin:0 auto;
+			}
+			p.name{
+				font-size: 24px;
+				color: #222;
+				text-align: center;
+				margin:25px 0 15px 0;
+			}
+			p.num{
+				font-size: 14px;
+				color: #999;
+				text-align: center;
+				margin-bottom: 25px;
+			}
+		}
+		.part2{
+			border-top:1px solid #eaeaea;
+			border-bottom:1px solid #eaeaea;
+			padding: 20px 0;
+			p.start{
+				img{
+					vertical-align: middle;
+				}
+				span{
+					font-size: 22px;
+					color: #d1d1d1;
+					vertical-align: middle;
+				}
+			}
+			p.add{
+				font-size: 14px;
+				color: #000;
+				margin-top: 20px;
+			}
+		}
+		.part3{
+			padding:45px 0;
+		}
+		.part4{
+			@extend %clearfix;
+			a{
+				float: left;
+				width: 50%;
+				height: 50px;
+				line-height: 50px;
+				font-size: 18px;
+				text-align:center;
+				img{
+					vertical-align: middle;
+					width: 30px;
+				}
+				&.a1{
+					background-color:#f6f6f6;
+					color: #777;
+				}
+				&.a2{
+					background: #3bce9d;
+					color: #fff;
+				}
+			}	
+		}
+	}
+}
