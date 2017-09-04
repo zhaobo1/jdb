@@ -49,7 +49,6 @@ export default React.createClass({
 		})
 	},
 	render() {
-		console.log(this.state.date)
 		var lis = this.state.date.map(function (m,index) {
             return <Listitem key={index} XUKEZ={m.XUKEZ} NAME={m.NAME} URL={CONFIG.picurl+m.LOGO} ID={m.ORGANIZATION_ID}/>
         })	
