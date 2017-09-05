@@ -15,7 +15,6 @@ const Header = React.createClass({
 					<div className="center">
 						<IndexLink to="/">首页</IndexLink>
 						<Link to="/jds-find">找鉴定所</Link>
-						<Link to="/news">新闻资讯</Link>
 						<Link to="/anq">经典问答</Link>
 						<Link to="/about">关于我们</Link>
 					</div>

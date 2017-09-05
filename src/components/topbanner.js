@@ -9,12 +9,12 @@ const Topbanner = React.createClass({
 		return(
 			<div className="topbanner">
 				<Banneritem 
-				name='个人亲子鉴定' 
+				name='个人亲子鉴定1' 
 				dis='了解血缘关系  匿名检测  保护隐私' 
 				pc1='2180' pc2='原价：￥2400'/>
 				<Banneritem 
 				name='上户口亲子鉴定' 
-				dis='派出所上户需要亲子鉴定报告具备司法效力' 
+				dis='派出所上户需要亲子鉴定报告<br>具备司法效力' 
 				pc1='2800' pc2='原价：￥3000'/>
 				<Banneritem 
 				name='无创产前亲子鉴定' 

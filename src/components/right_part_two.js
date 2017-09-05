@@ -33,19 +33,18 @@ export default React.createClass({
 		}
 	},
 	componentDidMount() {
-		var _this = this;
-		new PROMISE(function(resolve,reject){
+		new PROMISE((resolve,reject)=>{
 			$.ajax({
 				type:'GET',
 				url:CONFIG.ip+"mpi/findIndexCompany?companySize=6&questionSize=6",
 				dataType:'JSON',
-				success:function(data)
+				success:data=>
 				{
 					resolve(data);
 				}
 			})	
-		}).then(function(data){
-			_this.setState({date:data['data']['companys']});
+		}).then(data=>{
+			this.setState({date:data['data']['companys']});
 		})
 	},
 	render() {

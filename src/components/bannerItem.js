@@ -8,7 +8,7 @@ const Banneritem = React.createClass({
 					<Link to="">
 						<div className="info">
 							<p className="name">{this.props.name}</p>
-							<p className="tip">{this.props.dis}</p>
+							<p className="tip" dangerouslySetInnerHTML={{__html:this.props.dis}}></p>
 							<p className="pricebox">
 								<span className="color">￥</span>
 								<span className="fs30 color">{this.props.pc1}</span>/例

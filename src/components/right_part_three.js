@@ -33,8 +33,7 @@ export default React.createClass({
 		}
 	},
 	componentDidMount() {
-		var _this = this;
-		new PROMISE(function(resolve,reject){
+		new PROMISE((resolve,reject)=>{
 			$.ajax({
 				type:'GET',
 				dataType:'JSON',
@@ -44,9 +43,9 @@ export default React.createClass({
 					resolve(data)
 				}
 			})
-		}).then(function(data){
+		}).then(data=>{
 			var questions = data['data']['questions'];
-			_this.setState({data:questions});
+			this.setState({data:questions});
 		})
 	},
 	render() {

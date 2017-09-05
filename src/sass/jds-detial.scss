@@ -1,4 +1,5 @@
 @import 'common';
+#detial{
 .mainleft{
 	width:855px;
 	margin-right:25px;
@@ -118,6 +119,11 @@
 		}
 		.part3{
 			padding:45px 0;
+			img{
+				display: block;
+				max-width: 100%;
+				margin:0 auto;
+			}
 		}
 		.part4{
 			@extend %clearfix;
@@ -143,4 +149,5 @@
 			}	
 		}
 	}
+}
 }

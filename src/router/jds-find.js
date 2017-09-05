@@ -6,6 +6,7 @@ import RightPartOne from '../components/right_part_one.js';
 import RightPartTwo from '../components/right_part_two.js';
 import Chouseare from '../components/chouse.js';
 import Jdslist from '../components/jdslist.js';
+import FOOTER from '../components/footer.js'
 export default React.createClass({
 	getInitialState() {
 		return{
@@ -35,6 +36,7 @@ export default React.createClass({
 						<div className="part3"></div>
 					</div>
 				</div>
+				<FOOTER/>
 			</div>
 		)
 	}

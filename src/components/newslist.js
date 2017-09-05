@@ -14,7 +14,7 @@ const List = React.createClass({
 	render() {
 		return(
 				<div className="item">
-					<Link to={{pathname:'/news-detial',query:{id:this.props.id}}}>
+					<Link to={{pathname:'/new-detial',query:{id:this.props.id}}}>
 						<img src={CONFIG.picurl+this.props.LOGO} className="bimg" alt={this.props.TITLE}></img>
 						<div className="info">
 							<h2 className="name">{this.props.TITLE}</h2>
@@ -109,7 +109,7 @@ export default React.createClass({
 				/>
 			})
 			return (
-				<div className="newslist" id="newslist">
+				<div className="newslist" id="newslist" style={{borderTop:`1px solid #eaeaea`}}>
 					{nlist}
 					<PAGE 
 					hand={this.hanldClick} 

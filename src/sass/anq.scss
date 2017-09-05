@@ -1,27 +1,26 @@
 @import 'common';
-.mainleft{
-	width:857px;
-	margin-right:25px;
-	float:left;
-	.anqlist{
-		margin-top: 25px;
-		border-top:1px solid #eaeaea;
-		border-left:1px solid #eaeaea;
-		border-right:1px solid #eaeaea;
-		padding: 0 19px;
-		background: #fff;
-		div.item{
-			padding: 50px 0 30px 0;
-			background:#fff;
-			border-bottom:1px solid #eaeaea;
-			div{
-				display: block;
-				background: url(../images/wen-icon.png) no-repeat left top;
-				padding-left: 62px;
-				p.name{
-					font-size: 18px;
-					color: #455159;
-					margin-bottom: 30px;
+#anq{
+	.mainleft{
+		width:857px;
+		margin-right:25px;
+		float:left;
+		.anqlist{
+			margin-top: 25px;
+			div.item{
+				padding: 50px 19px 30px 19px;
+				background:#fff;
+				border-bottom:1px solid #eaeaea;
+				border-left:1px solid #eaeaea;
+				border-right:1px solid #eaeaea;
+				div{
+					display: block;
+					background: url(../images/wen-icon.png) no-repeat left top;
+					padding-left: 62px;
+					p.name{
+						font-size: 18px;
+						color: #455159;
+						margin-bottom: 30px;
+					}
 				}
 			}
 		}
