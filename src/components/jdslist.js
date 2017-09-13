@@ -64,7 +64,7 @@ export default React.createClass({
 				this.setState({data:data['data'],countAll:total,pageAll:allpage});
 
 			})
-		},500)
+		},10)
 	},
 	handleClick(num){
 		this.setState({

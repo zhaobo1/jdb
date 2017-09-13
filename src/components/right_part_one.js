@@ -1,11 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Link } from 'react-router';
-
 const RightPartOne = React.createClass({
 	render(){
 		return(
-			<div className="part1">
+			<div key="1" className="part1" ref="mypart1">
 				<Link style={{display: `block`}} className="top" href="http://xaobang.com/xaobang.apk"></Link>
 				<div className="bottom">
 					<p className="p1">小帮鉴定是国内领先的移动司法鉴定服务平台，致力于为用户提供便捷，低价的鉴定服务</p>
