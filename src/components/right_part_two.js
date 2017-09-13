@@ -13,11 +13,11 @@ const Listitem = React.createClass({
 	render() {
 		return(
 			<div className="item">
-				<Link to={{ pathname: '/jds-find', query: { id: this.props.ID } }} className="pic">
+				<Link to={{ pathname: '/jds-detial', query: { id: this.props.ID } }} className="pic">
 					<img src={this.props.URL} alt={this.props.NAME}></img>
 				</Link>
 				<div className="info">
-					<Link to={{ pathname: '/jds-find', query: { id: this.props.ID } }} className="name">{this.props.NAME}</Link>
+					<Link to={{ pathname: '/jds-detial', query: { id: this.props.ID } }} className="name">{this.props.NAME}</Link>
 					<p className="num">许可证号:{this.props.XUKEZ}</p>
 					<Link to="" target="_blank" className="chat">咨询</Link>
 				</div>

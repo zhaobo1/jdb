@@ -54,11 +54,12 @@ const SCORE = React.createClass({
 export default React.createClass({
 	getInitialState() {
 		return {
-			data:''
+			data:'',
+			id:''
 		}
 	},
 	componentDidMount() {
-		var url = `mpi/findCompanyById?id=${this.props.location.query.id}`
+		var url = `mpi/findCompanyById?id=${this.props.location.query.id}`;
 		new PROMISE((resolve,reject)=>{
 			$.ajax({
 				type:'GET',
@@ -70,9 +71,37 @@ export default React.createClass({
 			})
 		}).then(data=>{
 			this.setState({
-				data:data['data']
+				data:data['data'],
+				id:data['data']['ORGANIZATION_ID']
 			})
 		})
+	},
+	componentDidUpdate(prevProps, prevState) {
+		var url = `mpi/findCompanyById?id=${this.props.location.query.id}`;
+		new PROMISE((resolve,reject)=>{
+			$.ajax({
+				type:'GET',
+				dataType:'JSON',
+				url:CONFIG.ip+url,
+				success:data=>{
+					resolve(data)
+				}
+			})
+		}).then(data=>{
+			this.setState({
+				data:data['data'],
+				id:data['data']['ORGANIZATION_ID']
+			})
+		})
+	},
+	shouldComponentUpdate(nextProps, nextState) {
+		
+		if(nextProps.location.query.id!=this.state.id)
+		{
+			return true
+		}else{
+			return false
+		}
 	},
 	render() {
 		return(

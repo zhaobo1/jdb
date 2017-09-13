@@ -6,16 +6,15 @@ export default React.createClass({
 		return(
 				<ReactCssTransitionGroup
 					component='div'
-					transitionName='part1'
-					transitionAppear={true}
-					transitionAppearTimeout={500}
-					transitionEnterTimeout={500}
-					transitionLeaveTimeout={500}
+					transitionName='slide-in'
+					transitionEnterTimeout={1300}
+					transitionLeave={false}
+					transitionLeaveTimeout={300}
 				>
-					<div key={this.props.location.pathname} >
+					<div key={this.props.location.pathname}>
 						{this.props.children}
 					</div>
-				</ReactCssTransitionGroup>
+				</ReactCssTransitionGroup> 
 			)
 	}
 })
